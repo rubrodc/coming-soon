@@ -1,12 +1,15 @@
 import React from 'react';
 import './App.css';
 
+// Import Geist Fonts (Adjust based on how you include the fonts)
+import 'non.geist'; // For Geist Sans
+
 const App = () => {
   return (
     <div className="coming-soon-container">
       <div className="profile-section">
         <img
-          src="your-profile-picture-url.jpg" // Replace with your profile picture URL
+          src="https://avatars.githubusercontent.com/u/80220701?v=4" // Replace with your profile picture URL
           alt="Ruben Rodrigues"
           className="profile-picture"
         />
@@ -15,17 +18,14 @@ const App = () => {
       </div>
 
       <div className="social-links">
-        <a href="https://dribbble.com/yourprofile" target="_blank" rel="noopener noreferrer">
+        <a href="https://dribbble.com/imrubro" target="_blank" rel="noopener noreferrer">
           Dribbble
         </a>
-        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/rubro-ui" target="_blank" rel="noopener noreferrer">
           LinkedIn
         </a>
-        <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
-          Twitter
-        </a>
-        <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">
-          GitHub
+        <a href="https://read.cv/rubro" target="_blank" rel="noopener noreferrer">
+          Read.cv
         </a>
       </div>
     </div>

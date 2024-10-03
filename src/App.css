@@ -1,3 +1,11 @@
+body {
+  font-family: 'Geist Variable';
+  margin: 0;
+  padding: 0;
+  color: #161616;
+  background-color: #fff;
+}
+
 .coming-soon-container {
   display: flex;
   flex-direction: column;
@@ -5,7 +13,6 @@
   justify-content: center;
   height: 100vh;
   text-align: center;
-  background-color: #f0f0f0;
 }
 
 .profile-section {
