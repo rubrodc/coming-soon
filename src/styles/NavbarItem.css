@@ -1,0 +1,51 @@
+/* General reset */
+.navbar-item {
+	display: flex;
+	align-items: center;
+	padding: 0 8px;
+	cursor: pointer;
+	position: relative;
+	transition: background-color 0.3s ease-in-out;
+}
+
+/* Icon styling */
+.navbar-icon {
+	margin-right: 10px; /* Space between icon and text */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px; /* Adjust size to your liking */
+	background-color: #e9e9e9;
+	/* padding: 8px; */
+	border-radius: 8px;
+	width: 40px;
+	height: 40px;
+}
+
+/* Text styling */
+.navbar-text {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+/* Arrow styling (initially hidden) */
+.arrow-right {
+	opacity: 0;
+	transform: translateX(0px); /* Move arrow slightly to the left */
+	transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    margin-top: 3px;
+}
+
+/* On hover, reveal arrow */
+.navbar-item:hover .arrow-right {
+	opacity: 1;
+	transform: translateX(
+		8px
+	); /* Move arrow to the right (to its original position) */
+}
+
+@media only screen and (max-width: 600px) {
+	.navbar-text {
+        font-size: 12px;
+    }
+}

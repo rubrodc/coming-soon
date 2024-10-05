@@ -1,52 +1,55 @@
+
+:root {
+  --main-width: 95%;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Geist Variable';
   margin: 0;
   padding: 0;
   color: #161616;
-  background-color: #fff;
+  background-color: #F9F9F9;
 }
 
-.coming-soon-container {
+.home-main {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
-  text-align: center;
+  width: var(--main-width);
+  margin: 0 auto;
 }
 
-.profile-section {
-  margin-bottom: 20px;
+.container {
+  margin-top: 150px;
+  min-height: 1200px;
 }
 
-.profile-picture {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 20px;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  :root {
+    --main-width: 80%;
+  }
 }
-
-.name {
-  font-size: 2.5rem;
-  margin: 0;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  :root {
+    --main-width: 70%;
+  }
 }
-
-.role {
-  font-size: 1.2rem;
-  color: #777;
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  :root {
+    --main-width: 60%;
+  }
 }
-
-.social-links {
-  display: flex;
-  gap: 20px;
-}
-
-.social-links a {
-  font-size: 1rem;
-  color: #0077b5;
-  text-decoration: none;
-}
-
-.social-links a:hover {
-  text-decoration: underline;
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  :root {
+    --main-width: 50%;
+  }
 }
