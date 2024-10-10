@@ -1,0 +1,42 @@
+.card {
+	display: flex;
+	flex-direction: column;
+    gap: 12px;
+	background-color: #FFF;
+	border-radius: 16px;
+	align-items: baseline;
+	padding: 18px 16px;
+	max-width: 202px;
+    flex: 1 1 0;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box; /* Firefox, other Gecko */
+	box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+.title {
+	color: #313131;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.card p {
+	font-size: 1rem;
+	color: #666666;
+	font-weight: 500;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        padding: 8px;
+        max-width: none;
+        width: 100%;
+    }
+	.title {
+        font-size: 1rem;
+    }
+
+    .card p {
+        font-size: 0.7rem;
+    }
+}

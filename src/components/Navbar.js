@@ -44,6 +44,7 @@ const Navbar = () => {
 				<div className='buttons-container'>
 					<button className='contact-btn'>Contact</button>
 					<button
+						type='button'
 						className='menu-btn'
 						aria-expanded={isDropdownOpen}
 						aria-controls='dropdown-content'
