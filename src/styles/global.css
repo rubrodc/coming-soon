@@ -93,7 +93,8 @@ body {
   align-items: center;
   gap: 6px;
   text-decoration: none;
-  color: #666666;
+  color: #666666 !important;
+  font-size: 15px;
 }
 
 .back-link img {

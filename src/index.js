@@ -11,7 +11,7 @@ import Home from './components/Home';
 import Uses from './components/Uses';
 import 'non.geist'; // For Geist Sans
 import './styles/global.css';
-import MacbookPro from './components/uses/MacbookPro';
+import HardwarePage from './components/uses/HardwarePage';
 
 const router = createBrowserRouter([
   {
@@ -28,7 +28,51 @@ const router = createBrowserRouter([
       },
       {
         path: "/uses/macbook-pro",
-        element: <MacbookPro />,
+        element: <HardwarePage product='macbook-pro' />,
+      },
+      {
+        path: "/uses/iphone-15-pro",
+        element: <HardwarePage product='iphone-15-pro' />,
+      },
+      {
+        path: "/uses/apple-watch",
+        element: <HardwarePage product='apple-watch' />,
+      },
+      {
+        path: "/uses/macbook-air",
+        element: <HardwarePage product='macbook-air' />,
+      },
+      {
+        path: "/uses/mi-curved-gaming",
+        element: <HardwarePage product='mi-curved-gaming' />,
+      },
+      {
+        path: "/uses/airpods-4",
+        element: <HardwarePage product='airpods-4' />,
+      },
+      {
+        path: "/uses/sony-wh-xb910n",
+        element: <HardwarePage product='sony-wh-xb910n' />,
+      },
+      {
+        path: "/uses/logitech-mx-master-3",
+        element: <HardwarePage product='logitech-mx-master-3' />,
+      },
+      {
+        path: "/uses/pocket-knife",
+        element: <HardwarePage product='pocket-knife' />,
+      },
+      {
+        path: "/uses/gopro",
+        element: <HardwarePage product='gopro' />,
+      },
+      {
+        path: "/uses/canon-250d",
+        element: <HardwarePage product='canon-250d' />,
+      },
+      {
+        path: "/uses/playstation-5",
+        element: <HardwarePage product='playstation-5' />,
       },
     ],
   },
