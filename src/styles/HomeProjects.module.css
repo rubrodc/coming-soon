@@ -1,7 +1,7 @@
 .image-container {
-	columns: 3 449px;
+	columns: 3 300px;
 	column-gap: 1em;
-	padding: 0 4%;
+	padding: 0 6%;
 	margin: 40px 0 120px 0;
 }
 
