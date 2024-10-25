@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/navbar.css';
 import HamburguerIcon from '../images/hamburguer.svg';
 import CloseIcon from '../images/close.svg';
@@ -15,9 +15,21 @@ import ChangelogIcon from './icons/ChangelogIcon';
 import DribbbleIcon from './icons/DribbbleIcon';
 import ReadCVIcon from './icons/ReadCVIcon';
 import LinkedinIcon from './icons/LinkedinIcon';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
 	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+	const location = useLocation();
+
+	useEffect(() => {
+		if (isDropdownOpen) {
+			setIsDropdownOpen(false);
+		}
+
+		window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+		// eslint-disable-next-line
+	}, [location]);
 
 	// Toggle function for dropdown
 	const toggleDropdown = () => {
@@ -28,11 +40,13 @@ const Navbar = () => {
 		<header className={`header ${isDropdownOpen ? 'open' : ''}`}>
 			<div className='header-content'>
 				{/* Logo image */}
-				<img
-					src='https://avatars.githubusercontent.com/u/80220701?v=4'
-					alt='Company Logo'
-					className='logo'
-				/>
+				<Link to="/">
+					<img
+						src='https://avatars.githubusercontent.com/u/80220701?v=4'
+						alt='Company Logo'
+						className='logo'
+					/>
+				</Link>
 
 				{/* Text container right next to the image */}
 				<div className='text-container'>
@@ -68,28 +82,50 @@ const Navbar = () => {
 					<div className='dropdown-content-wrapper-menu'>
 						<h1>Explore</h1>
 						<div className='dropdown-content-wrapper-menu-items'>
-						<NavbarItem icon={<HomeIcon />} text='Home' />
-						<NavbarItem icon={<AboutIcon />} text='About' />
-						<NavbarItem icon={<ProjectsIcon />} text='Projects' />
-						<NavbarItem icon={<NowIcon />} text='Now' />
-						<NavbarItem icon={<UsesIcon />} text='Uses' />
-						<NavbarItem icon={<PhotosIcon />} text='Photos' />
+							<NavbarItem icon={<HomeIcon />} text='Home' />
+							<NavbarItem icon={<AboutIcon />} text='About' />
+							<NavbarItem
+								icon={<ProjectsIcon />}
+								text='Projects'
+							/>
+							<NavbarItem icon={<NowIcon />} text='Now' />
+							<NavbarItem
+								icon={<UsesIcon />}
+								text='Uses'
+								href='/uses'
+							/>
+							<NavbarItem icon={<PhotosIcon />} text='Photos' />
 						</div>
 					</div>
 					<div className='dropdown-content-wrapper-menu'>
 						<h1>Others</h1>
 						<div className='dropdown-content-wrapper-menu-items'>
-						<NavbarItem icon={<ColophonIcon />} text='Colophon' />
-						<NavbarItem icon={<AccessibilityIcon />} text='Accessibility' />
-						<NavbarItem icon={<ChangelogIcon />} text='Changelog' />
+							<NavbarItem
+								icon={<ColophonIcon />}
+								text='Colophon'
+							/>
+							<NavbarItem
+								icon={<AccessibilityIcon />}
+								text='Accessibility'
+							/>
+							<NavbarItem
+								icon={<ChangelogIcon />}
+								text='Changelog'
+							/>
 						</div>
 					</div>
 					<div className='dropdown-content-wrapper-menu'>
 						<h1>Connect</h1>
 						<div className='dropdown-content-wrapper-menu-items'>
-						<NavbarItem icon={<DribbbleIcon />} text='Dribbble' />
-						<NavbarItem icon={<ReadCVIcon />} text='React.cv' />
-						<NavbarItem icon={<LinkedinIcon />} text='LinkedIn' />
+							<NavbarItem
+								icon={<DribbbleIcon />}
+								text='Dribbble'
+							/>
+							<NavbarItem icon={<ReadCVIcon />} text='React.cv' />
+							<NavbarItem
+								icon={<LinkedinIcon />}
+								text='LinkedIn'
+							/>
 						</div>
 					</div>
 				</div>

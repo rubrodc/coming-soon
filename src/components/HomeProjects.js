@@ -17,17 +17,19 @@ const HomeProjects = () => {
     return (
         <div className={styles['image-container']}>
             <img src={Image1} alt='' width={449} height={341} />
-            <img src={Image2} alt='' width={449} height={448} />
-            <img src={Image3} alt='' width={449} height={448} />
             <img src={Image4} alt='' width={449} height={449} />
-            <img src={Image5} alt='' width={449} height={341} />
-            <img src={Image6} alt='' width={449} height={336} />
-            <img src={Image7} alt='' width={449} height={336} />
-            <img src={Image9} alt='' width={449} height={336} />
-            <img src={Image8} alt='' width={449} height={336} />
+            <img src={Image7} alt='' width={449} height={449} />
             <img src={Image10} alt='' width={449} height={336} />
-            <img src={Image12} alt='' width={449} height={336} />
-            <img src={Image11} alt='' width={449} height={336} />
+            
+            <img src={Image2} alt='' width={449} height={449} />
+            <img src={Image5} alt='' width={449} height={449} />
+            <img src={Image8} alt='' width={449} height={449} />
+            <img src={Image11} alt='' width={449} height={449} />
+            
+            <img src={Image3} alt='' width={449} height={449} />
+            <img src={Image6} alt='' width={449} height={449} />
+            <img src={Image9} alt='' width={449} height={449} />
+            <img src={Image12} alt='' width={449} height={449} />
         </div>
     )
 }

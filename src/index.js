@@ -1,13 +1,44 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Root from './routes/root';
+import Home from './components/Home';
+import Uses from './components/Uses';
+import 'non.geist'; // For Geist Sans
+import './styles/global.css';
+import MacbookPro from './components/uses/MacbookPro';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/uses",
+        element: <Uses />,
+      },
+      {
+        path: "/uses/macbook-pro",
+        element: <MacbookPro />,
+      },
+    ],
+  },
+]);
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

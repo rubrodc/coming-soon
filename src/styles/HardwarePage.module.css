@@ -1,0 +1,24 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.wrapper h1 {
+    font-size: 30px;
+    color: #171717;
+}
+
+.wrapper h2 {
+    font-size: 20px;
+    color: #666666;
+    font-weight: normal;
+}
+
+.wrapper h3 {
+    font-size: 16px;
+    color: #666666;
+    font-weight: normal;
+}
+

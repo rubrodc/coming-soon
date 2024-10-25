@@ -6,6 +6,8 @@
 	cursor: pointer;
 	position: relative;
 	transition: background-color 0.3s ease-in-out;
+	text-decoration: none;
+	color: #161616;
 }
 
 /* Icon styling */

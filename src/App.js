@@ -8,63 +8,7 @@ import HomeProjects from './components/HomeProjects';
 import 'non.geist'; // For Geist Sans
 
 const App = () => {
-	const [date, setDate] = useState(new Date());
-
-	useEffect(() => {
-		const timer = setInterval(() => setDate(new Date()), 1000);
-		return function cleanup() {
-			clearInterval(timer);
-		};
-	});
-
 	return (
-		<main className='home-main'>
-			<Navbar />
-			<div className='container'>
-				<HomeContent />
-			</div>
-
-			<HomeProjects />
-			<div className='overlay'>
-				<p>
-					<h1 style={{ textAlign: 'center' }}>
-						New projects are shaping up.
-						<br />
-						Stay close!
-					</h1>
-				</p>
-
-				<div className='footer'>
-					<div className='footer-links-wrapper'>
-						<div className='footer-links'>
-							<h1>Explore</h1>
-							<span>Home</span>
-							<span>About</span>
-							<span>Projects</span>
-							<span>Now</span>
-							<span>Uses</span>
-						</div>
-						<div className='footer-links'>
-							<h1>Legal</h1>
-							<span>Colophon</span>
-							<span>Accessibility</span>
-							<span>Changelog</span>
-						</div>
-						<div className='footer-links'>
-							<h1>Connect</h1>
-							<span>Dribbble</span>
-							<span>Read.cv</span>
-							<span>LinkedIn</span>
-						</div>
-					</div>
-
-					<div className='footer-me'>
-						<span>©2024 Rúben Rodrigues</span>
-						<span>{date.toLocaleTimeString()}</span>
-					</div>
-				</div>
-			</div>
-		</main>
 		// <div className="coming-soon-container">
 		//   <div className="profile-section">
 		//     <img

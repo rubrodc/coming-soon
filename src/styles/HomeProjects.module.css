@@ -1,22 +1,20 @@
 .image-container {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr); /* 3 images per row */
-	grid-auto-rows: 200px; /* Set the default height for rows */
-	gap: 10px;
+	columns: 3 449px;
+	column-gap: 1em;
 	padding: 0 10%;
 	margin: 40px 0 120px 0;
 }
 
 .image-container img {
-	width: 100%;
-	height: 100%;
+	display: block;
+	margin-bottom: 1em;
 	object-fit: cover;
 	transition: transform 0.3s ease;
 	border-radius: 16px;
 }
 
 /* Make images of different sizes using grid row and column spans */
-.image-container img:nth-child(1) {
+/* .image-container img:nth-child(1) {
 	grid-column: span 1;
 	grid-row: span 1;
 }
@@ -74,36 +72,4 @@
 .image-container img:nth-child(12) {
 	grid-column: span 1;
 	grid-row: span 1;
-}
-
-@media only screen and (max-width: 600px) {
-	.image-container {
-		grid-auto-rows: 80px; /* Set the default height for rows */
-        padding: 0 2.5%;
-	}
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    .image-container {
-		grid-auto-rows: 90px; /* Set the default height for rows */
-	}
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .image-container {
-		grid-auto-rows: 100px; /* Set the default height for rows */
-	}
-}
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .image-container {
-		grid-auto-rows: 130px; /* Set the default height for rows */
-	}
-}
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    .image-container {
-		grid-auto-rows: 150px; /* Set the default height for rows */
-	}
-}
+} */
