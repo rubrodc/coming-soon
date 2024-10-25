@@ -11,6 +11,7 @@
 	object-fit: cover;
 	transition: transform 0.3s ease;
 	border-radius: 16px;
+	width: 100%;
 }
 
 /* Make images of different sizes using grid row and column spans */

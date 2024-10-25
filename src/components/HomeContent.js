@@ -8,7 +8,7 @@ const HomeContent = () => {
 	return (
 		<div className={styles.content}>
 			<h1 className={styles.title}>
-				Designing produtcs <br /> that people love.
+				Designing products <br /> that people love.
 			</h1>
 			<h2 className={styles.subtitle}>
 				I bring bold ideas to life through engaging, user-focused
