@@ -1,26 +1,131 @@
-
 :root {
   --main-width: 95%;
+  font-family: 'InterDisplay', sans-serif;
+  --text-color: #161616;
+  --bg-color: #F9F9F9;
+  --nav-item-text-color: #555555;
+  --nav-item-active-text-color: #171717;
+  --nav-item-border-color: #000000;
+  --navbar-hover-bg-color: #F0F0F0;
+  --theme-btn-bg-color: #EFEFEF;
+  --title-3-color: #555555;
+  --hardware-bg-color: #FFF;
+  --hardware-round-btn-bg: #F9F9F9;
+  --hardware-round-btn-arrow: #555555;
+}
+
+[data-theme="dark"] {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --nav-item-text-color: #A9A9A9;
+  --nav-item-active-text-color: #FFFFFF;
+  --nav-item-border-color: #A9A9A9;
+  --navbar-hover-bg-color: #202020;
+  --theme-btn-bg-color: #202020;
+  --title-3-color: #BBBBBB;
+  --hardware-bg-color: #111111;
+  --hardware-round-btn-bg: #0D0D0D;
+  --hardware-round-btn-arrow: #A9A9A9;
+}
+
+.display-1 {
+  font-family: 'InterDisplay-Bold';
+  font-size: 52px;
+  line-height: 68px;
+  letter-spacing: -0.25px;
+}
+
+.display-2 {
+  font-family: 'InterDisplay-Bold';
+  font-size: 44px;
+  line-height: 57px;
+  letter-spacing: 0px;
+}
+
+.display-3 {
+  font-family: 'InterDisplay-Bold';
+  font-size: 38px;
+  line-height: 50px;
+  letter-spacing: 0px;
+}
+
+.headline-1 {
+  font-family: 'InterDisplay-SemiBold';
+  font-size: 30px;
+  line-height: 39px;
+  letter-spacing: 0px;
+}
+
+.headline-2 {
+  font-family: 'InterDisplay-SemiBold';
+  font-size: 26px;
+  line-height: 34px;
+  letter-spacing: 0px;
+}
+
+.headline-3 {
+  font-family: 'InterDisplay-SemiBold';
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: 0px;
+}
+
+.title-1 {
+  font-family: 'InterDisplay-Medium';
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0px;
+}
+
+.title-2 {
+  font-family: 'InterDisplay-Medium';
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+}
+
+.title-3 {
+  font-family: 'InterDisplay-Medium';
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+}
+
+.body-1 {
+  font-family: 'InterDisplay-Regular';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+}
+
+.body-2 {
+  font-family: 'InterDisplay-Regular';
+  font-size: 15px;
+  line-height: 22.5px;
+  letter-spacing: 0px;
+}
+
+.body-3 {
+  font-family: 'InterDisplay-Medium';
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0px;
 }
 
 a:link {
   text-decoration: none;
-  color: unset; 
 }
 
 a:visited {
   text-decoration: none;
-  color: unset; 
 }
 
 a:hover {
   text-decoration: none;
-  color: unset; 
 }
 
 a:active {
   text-decoration: none;
-  color: unset; 
 }
 
 .sm-container {
@@ -37,11 +142,11 @@ h1, h2, h3, h4, h5 {
 }
 
 body {
-  font-family: 'Geist Variable';
+  font-family: 'InterDisplay';
   margin: 0;
   padding: 0;
-  color: #161616;
-  background-color: #F9F9F9;
+  color: var(--text-color);
+  background-color: var(--bg-color);
 }
 
 .home-main {
@@ -52,7 +157,7 @@ body {
 
 .container {
   position: relative;
-  margin-top: 180px;
+  margin-top: 100px;
 }
 
 .flex-wrapper-md {

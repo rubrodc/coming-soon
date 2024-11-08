@@ -1,17 +1,19 @@
 import React from 'react';
 import '../styles/NavbarItem.css';
-import CaretRightIcon from './icons/CaretRightIcon';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 // NavbarItem Component
-const NavbarItem = ({ icon, text, href }) => {
+const NavbarItem = ({ text, href }) => {
+	const location = useLocation();
+
+	const isActive = location.pathname === href;
+
 	return (
-		<Link to={href} className='navbar-item'>
-			<div className='navbar-icon'>{icon}</div>
+		<Link to={href} className={`${ isActive ? 'navbar-active ' : ''}navbar-item body-3`}>
 			<span className='navbar-text'>{text}</span>
-			<span className='arrow-right'>
-				<CaretRightIcon />
-			</span>
+			{
+				isActive && <span className='active-border' />
+			}
 		</Link>
 	);
 };

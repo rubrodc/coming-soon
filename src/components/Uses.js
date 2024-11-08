@@ -30,87 +30,127 @@ import Discord from '../images/uses/discord.png';
 import Firefox from '../images/uses/firefox.png';
 import Obsidian from '../images/uses/obsidian.png';
 import { Link } from 'react-router-dom';
+import { ReactComponent as ArrowUpRight } from '../images/ic-arrow-up-right.svg';
 
 const Uses = () => {
 	return (
 		<div>
 			<div className={`sm-container ${styles['main-container']}`}>
-				<h1>Uses</h1>
-				<p>
+				<h1 className="display-1">Workflow Essencials</h1>
+				<p className="title-3">
 					Here's a quick rundown of all the tech and office gear I
-					use. This list includes the tools that keep my workflow
-					smooth, and the office gear that makes my workspace both
+					use. This list <br /> includes the tools that keep my workflow
+					smooth, and the office <br /> gear that makes my workspace both
 					functional and enjoyable.
 				</p>
 			</div>
 
 			<div className={styles['section-wrapper']}>
 				<div className='sm-container'>
-					<h2 className={styles['text-md']}>Hardware</h2>
+					<h2 className={`headline-1 ${styles['text-md']}`}>Professional <br /> Hardware</h2>
 				</div>
                 <div className={styles['md-container']}>
                     <div className={styles['hardware-wrapper']}>
                         <Link to="/uses/macbook-pro" className={styles.hardware}>
+                            <span className={styles['round-btn']}>
+                                <ArrowUpRight />
+                            </span>
                             <img src={MacbookPro} alt='' />
                             <h3>Macbook Pro M2</h3>
                             <h4>For power and endless tabs</h4>
                         </Link>
                         <Link to='/uses/iphone-15-pro' className={styles.hardware}>
+                        <span className={styles['round-btn']}>
+                                <ArrowUpRight />
+                            </span>
                             <img src={Iphone} alt='' />
                             <h3>Iphone 15 Pro</h3>
                             <h4>For staying connected</h4>
                         </Link>
                         <Link to='/uses/apple-watch' className={styles.hardware}>
+                        <span className={styles['round-btn']}>
+                                <ArrowUpRight />
+                            </span>
                             <img src={AppleWatch} alt='' />
                             <h3>Apple Watch Series 7</h3>
                             <h4>For steps and skipped notifications</h4>
                         </Link>
                         <Link to='/uses/airpods-4' className={styles.hardware}>
+                        <span className={styles['round-btn']}>
+                                <ArrowUpRight />
+                            </span>
                             <img src={Airpods} alt='' />
                             <h3>AirPods 4 ANC</h3>
                             <h4>For crisp sound and zero tangled cords</h4>
                         </Link>
                         <Link to='/uses/mi-curved-gaming' className={styles.hardware}>
+                        <span className={styles['round-btn']}>
+                                <ArrowUpRight />
+                            </span>
                             <img src={Monitor} alt='' />
                             <h3>MI Curved Gaming 34’’</h3>
                             <h4>For when size really matters</h4>
                         </Link>
                         <Link to='/uses/sony-wh-xb910n' className={styles.hardware}>
+                        <span className={styles['round-btn']}>
+                                <ArrowUpRight />
+                            </span>
                             <img src={Headset} alt='' />
                             <h3>Sony WH-XB910N</h3>
                             <h4>For blocking out noise and bad ideas</h4>
                         </Link>
                         <Link to='logitech-mx-master-3' className={styles.hardware}>
+                        <span className={styles['round-btn']}>
+                                <ArrowUpRight />
+                            </span>
                             <img src={Mouse} alt='' />
                             <h3>Logitech MX Master 3</h3>
                             <h4>For smoothly moving pixels like a pro</h4>
                         </Link>
                         <Link to='/uses/macbook-air' className={styles.hardware}>
+                        <span className={styles['round-btn']}>
+                                <ArrowUpRight />
+                            </span>
                             <img src={MacbookAir} alt='' />
                             <h3>Macbook Air M1</h3>
                             <h4>For lightweight tasks on the go</h4>
                         </Link>
                         <Link to='/uses/pocket-knife' className={styles.hardware}>
+                        <span className={styles['round-btn']}>
+                                <ArrowUpRight />
+                            </span>
                             <img src={Victorinox} alt='' />
                             <h3>Victorinox Spartan</h3>
                             <h4>For tiny screws and big ideas</h4>
                         </Link>
                         <Link to='/uses/gopro' className={styles.hardware}>
+                        <span className={styles['round-btn']}>
+                                <ArrowUpRight />
+                            </span>
                             <img src={GoPro} alt='' />
                             <h3>GoPro HERO 12 Black</h3>
                             <h4>{`For action shots I’ll watch... someday`}</h4>
                         </Link>
                         <Link to='/uses/canon-250d' className={styles.hardware}>
+                        <span className={styles['round-btn']}>
+                                <ArrowUpRight />
+                            </span>
                             <img src={Canon} alt='' />
                             <h3>Canon 250D</h3>
                             <h4>For when the iPhone needs a pro backup</h4>
                         </Link>
                         <Link to='/uses/playstation-5' className={styles.hardware}>
+                            <span className={styles['round-btn']}>
+                                <ArrowUpRight />
+                            </span>
                             <img src={PS5} alt='' />
                             <h3>PlayStation 5</h3>
                             <h4>For endless gaming and "one more level."</h4>
                         </Link>
                         <div className={styles.hardware}>
+                        <span className={styles['round-btn']}>
+                                <ArrowUpRight />
+                            </span>
                             <img src={EFS18} alt='' />
                             <h3>EFS 18-55mm</h3>
                             <h4>Personal Beast</h4>

@@ -1,49 +1,44 @@
 /* General reset */
+
 .navbar-item {
-	display: flex;
-	align-items: center;
-	padding: 0 8px;
 	cursor: pointer;
-	position: relative;
-	transition: background-color 0.3s ease-in-out;
 	text-decoration: none;
-	color: #161616;
-}
-
-/* Icon styling */
-.navbar-icon {
-	margin-right: 10px; /* Space between icon and text */
+	color: var(--nav-item-text-color);
+	text-align: center;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	font-size: 24px; /* Adjust size to your liking */
-	background-color: #e9e9e9;
-	/* padding: 8px; */
-	border-radius: 8px;
-	width: 40px;
-	height: 40px;
+	justify-content: space-between;
+	height: 36px;
 }
 
-/* Text styling */
+.navbar-active {
+	position: relative;
+	/* top: 2px; */
+	color: var(--nav-item-active-text-color) !important;
+}
+
 .navbar-text {
-	font-size: 14px;
-	font-weight: 500;
-}
-
-/* Arrow styling (initially hidden) */
-.arrow-right {
-	opacity: 0;
-	transform: translateX(0px); /* Move arrow slightly to the left */
-	transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
-    margin-top: 3px;
+	padding: 6px 8px;
+	border-radius: 6px;
 }
 
 /* On hover, reveal arrow */
-.navbar-item:hover .arrow-right {
-	opacity: 1;
-	transform: translateX(
-		8px
-	); /* Move arrow to the right (to its original position) */
+.navbar-text:hover {
+	background-color: var(--navbar-hover-bg-color);
+}
+
+.navbar-active:hover .navbar-text {
+	background-color: transparent !important;
+}
+
+.active-border {
+	width: 30%;
+	height: 2px;
+	background-color: var(--nav-item-border-color);
+	border-radius: 99px;
+	position: relative;
+	top: 5px;
 }
 
 @media only screen and (max-width: 600px) {

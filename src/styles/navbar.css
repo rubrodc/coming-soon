@@ -1,170 +1,52 @@
 /* Improved styling for the header and its contents */
 .header {
-	position: fixed;
-	top: 0;
-	left: calc((100% - var(--main-width)) / 2);
-	right: calc((100% - var(--main-width)) / 2);
-	z-index: 1000; /* Ensure the header is above other content */
-	display: flex;
-	flex-direction: column;
-	background-color: #FFF;
-	transition: max-height 0.3s ease-in-out;
-	border-radius: 41px;
-	padding: 16px;
-	margin-top: 20px;
-	box-shadow: 0px 0px 1px 2px #F9F9F9;
+	margin: 27px;
 }
 
-.header.open {
-	max-height: fit-content;
-	gap: 20px;
-}
-
-.header-content {
+.header-links {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
+	gap: 16px;
 }
 
 .logo {
 	width: 50px;
 	height: 50px;
-	margin-right: 10px; /* Add some space between the image and the buttons */
 	border-radius: 99px;
+	position: fixed;
+	left: 20px;
+	top: 20px;
 }
 
-.text-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin-right: auto; /* Push the buttons to the far right */
-	gap: 3px;
-}
-
-.title {
-	margin: 0;
-	font-size: 14px;
-	color: #161616;
-	font-weight: 500;
-}
-
-.subtitle {
-	margin: 0;
-	font-size: 12px;
-	color: #666666;
-	font-weight: 450;
-}
-
-.buttons-container {
-	display: flex;
-	align-items: center;
-	gap: 10px; /* Adds space between the buttons */
-}
-
-.contact-btn {
-	background-color: #007aff;
-	color: white;
+.theme-btn {
+	border-radius: 99px;
 	border: none;
-	padding: 10px 20px;
-	cursor: pointer;
-	font-size: 12px;
-	border-radius: 99px;
-	font-weight: 700;
-}
-
-.menu-btn {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 40px;
-	height: 40px;
-	border: none;
-	border-radius: 99px;
-    background-color: #F9F9F9;
-}
-
-.dropdown-content {
-	padding: 6px;
-	display: none;
-}
-
-.dropdown-content.show {
-	display: block;
-}
-
-.dropdown-content-wrapper {
-	display: flex;
-	justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.dropdown-content-wrapper h1 {
-	font-size: 1rem;
-}
-
-.dropdown-content-wrapper-menu {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-}
-
-.dropdown-content-wrapper-menu-items {
-	display: flex;
-	flex-direction: column;
-	gap: 8px;
+	width: 48px;
+	height: 48px;
+	background-color: var(--theme-btn-bg-color);
+	position: fixed;
+	right: 20px;
+	top: 20px;
 }
 
 @media only screen and (max-width: 450px) {
-	.dropdown-content-wrapper-menu:last-of-type {
-        margin-top: 20px;
-    }
+	
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-	.dropdown-content {
-		padding: 8px;
-	}
-
-    .contact-btn {
-        padding: 13px 26px;
-        font-size: 14px;
-    }
-
-    .menu-btn {
-        width: 50px;
-        height: 50px;
-    }
-
-    .logo {
-        width: 60px;
-        height: 60px;
-        margin-right: 20px; /* Add some space between the image and the buttons */
-    }
-
-    .title {
-        font-size: 16px;
-    }
-    
-    .subtitle {
-        font-size: 14px;
-    }
+	
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-	.dropdown-content {
-		padding: 12px;
-	}
+	
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-	.dropdown-content {
-		padding: 16px;
-	}
+	
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-	.dropdown-content {
-		padding: 20px;
-	}
+	
 }
