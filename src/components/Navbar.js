@@ -5,6 +5,7 @@ import DarkModeIcon from '../images/ic-dark-mode.svg';
 import NavbarItem from './NavbarItem';
 import { Link, useLocation } from 'react-router-dom';
 import { ThemeContext } from '../context/ThemeContext';
+import { Tooltip } from 'react-tooltip';
 
 const Navbar = () => {
 	const { theme, toggleTheme } = useContext(ThemeContext);
@@ -39,10 +40,27 @@ const Navbar = () => {
 				</div>
 			</header>
 
-			<button className='theme-btn' onClick={toggleTheme}>
+			<button
+				className='theme-btn'
+				onClick={toggleTheme}
+				data-tooltip-id='my-tooltip'
+				data-tooltip-content='Switch theme'
+				data-tooltip-place='bottom-start'
+			>
 				<img
 					src={theme === 'dark' ? DarkModeIcon : LightModeIcon}
 					alt=''
+				/>
+				<Tooltip
+					id='my-tooltip'
+					className='body-3'
+					style={{
+						backgroundColor: 'var(--theme-tooltip-bg)',
+						color: 'var(--theme-tooltip-color)',
+						borderRadius: '99px',
+						fontSize: '100%',
+					}}
+					noArrow
 				/>
 			</button>
 		</React.Fragment>

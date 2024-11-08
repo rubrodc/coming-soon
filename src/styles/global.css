@@ -12,6 +12,8 @@
   --hardware-bg-color: #FFF;
   --hardware-round-btn-bg: #F9F9F9;
   --hardware-round-btn-arrow: #555555;
+  --theme-tooltip-bg: #0D0D0D;
+  --theme-tooltip-color: #FFF;
 }
 
 [data-theme="dark"] {
@@ -26,6 +28,8 @@
   --hardware-bg-color: #111111;
   --hardware-round-btn-bg: #0D0D0D;
   --hardware-round-btn-arrow: #A9A9A9;
+  --theme-tooltip-bg: #FFF;
+  --theme-tooltip-color: #171717;
 }
 
 .display-1 {
