@@ -1,6 +1,6 @@
 :root {
   --main-width: 95%;
-  font-family: 'InterDisplay', sans-serif;
+  font-family: 'InterDisplay-Regular', sans-serif;
   --text-color: #161616;
   --bg-color: #F9F9F9;
   --nav-item-text-color: #555555;
@@ -93,6 +93,7 @@
   font-size: 18px;
   line-height: 26px;
   letter-spacing: 0.2px;
+  font-weight: normal;
 }
 
 .body-1 {
@@ -107,6 +108,7 @@
   font-size: 15px;
   line-height: 22.5px;
   letter-spacing: 0px;
+  font-weight: normal;
 }
 
 .body-3 {

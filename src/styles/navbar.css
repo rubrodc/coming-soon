@@ -17,6 +17,7 @@
 	position: fixed;
 	left: 20px;
 	top: 20px;
+	z-index: 9999;
 }
 
 .theme-btn {
@@ -28,6 +29,7 @@
 	position: fixed;
 	right: 20px;
 	top: 20px;
+	z-index: 9999;
 }
 
 @media only screen and (max-width: 450px) {
