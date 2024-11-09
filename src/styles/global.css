@@ -1,6 +1,7 @@
 :root {
   --main-width: 95%;
-  font-family: 'InterDisplay-Regular', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
   --text-color: #161616;
   --bg-color: #F9F9F9;
   --nav-item-text-color: #555555;
@@ -14,6 +15,10 @@
   --hardware-round-btn-arrow: #555555;
   --theme-tooltip-bg: #0D0D0D;
   --theme-tooltip-color: #FFF;
+}
+
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
 }
 
 [data-theme="dark"] {
