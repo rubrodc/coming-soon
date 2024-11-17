@@ -3,18 +3,23 @@
   font-family: 'Inter', sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
   --text-color: #161616;
-  --bg-color: #F9F9F9;
+  --bg-color: #FFFF;
   --nav-item-text-color: #555555;
   --nav-item-active-text-color: #171717;
   --nav-item-border-color: #000000;
   --navbar-hover-bg-color: #F0F0F0;
   --theme-btn-bg-color: #EFEFEF;
   --title-3-color: #555555;
-  --hardware-bg-color: #FFF;
+  --hardware-bg-color: #FAFAFA;
   --hardware-round-btn-bg: #F9F9F9;
   --hardware-round-btn-arrow: #555555;
   --theme-tooltip-bg: #0D0D0D;
   --theme-tooltip-color: #FFF;
+  --now-secondary-text-color: #71717A;
+  --now-card-bg-color: #FAFAFA;
+  --now-card-title-text-color: #111827;
+  --now-card-subtitle-text-color: #71717A;
+  --now-ic-fill: #A1A1AA;
 }
 
 @supports (font-variation-settings: normal) {
@@ -35,13 +40,18 @@
   --hardware-round-btn-arrow: #A9A9A9;
   --theme-tooltip-bg: #FFF;
   --theme-tooltip-color: #171717;
+  --now-secondary-text-color: #BBBBBB;
+  --now-card-bg-color: #18181B;
+  --now-card-title-text-color: #FFFF;
+  --now-card-subtitle-text-color: #A1A1AA;
+  --now-ic-fill: #A1A1AA;
 }
 
 .display-1 {
   font-family: 'InterDisplay-Bold';
-  font-size: 52px;
-  line-height: 68px;
-  letter-spacing: -0.25px;
+  font-size: 30px;
+  line-height: 39px;
+  letter-spacing: 0px;
 }
 
 .display-2 {
@@ -153,7 +163,7 @@ h1, h2, h3, h4, h5 {
 }
 
 body {
-  font-family: 'InterDisplay';
+  font-family: 'InterDisplay-Medium';
   margin: 0;
   padding: 0;
   color: var(--text-color);
@@ -209,12 +219,19 @@ body {
   align-items: center;
   gap: 6px;
   text-decoration: none;
-  color: #666666 !important;
+  color: var(--nav-item-text-color) !important;
   font-size: 15px;
+  width: fit-content;
+  padding: 12px;
+  border-radius: 8px;
 }
 
 .back-link img {
   transition: transform 330ms ease;
+}
+
+.back-link:hover {
+  background-color: var(--navbar-hover-bg-color);
 }
 
 .back-link:hover img {
@@ -236,6 +253,12 @@ body {
   :root {
     --main-width: 80%;
   }
+
+  .display-1 {
+    font-size: 52px;
+    line-height: 68px;
+    letter-spacing: -0.25px;
+  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -246,12 +269,12 @@ body {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   :root {
-    --main-width: 60%;
+    --main-width: 70%;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   :root {
-    --main-width: 50%;
+    --main-width: 70%;
   }
 }

@@ -7,12 +7,12 @@
 
 .wrapper h1 {
     font-size: 30px;
-    color: #171717;
+    color: var(--nav-item-active-text-color);
 }
 
 .wrapper h2 {
     font-size: 20px;
-    color: #666666;
+    color: var(--nav-item-text-color);
     font-weight: normal;
 }
 

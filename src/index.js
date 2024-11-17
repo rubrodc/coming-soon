@@ -10,6 +10,7 @@ import Home from './components/Home';
 import Uses from './components/Uses';
 import './styles/global.css';
 import HardwarePage from './components/uses/HardwarePage';
+import Now from './components/Now';
 
 const router = createBrowserRouter([
   {
@@ -71,6 +72,10 @@ const router = createBrowserRouter([
       {
         path: "/uses/playstation-5",
         element: <HardwarePage product='playstation-5' />,
+      },
+      {
+        path: "/now",
+        element: <Now />,
       },
     ],
   },

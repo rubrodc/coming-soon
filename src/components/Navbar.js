@@ -7,6 +7,30 @@ import { Link, useLocation } from 'react-router-dom';
 import { ThemeContext } from '../context/ThemeContext';
 import { Tooltip } from 'react-tooltip';
 
+const paths = {
+	home: ["/"],
+	about: ["/about"],
+	uses: [
+	  "/uses",
+	  "/uses/macbook-pro",
+	  "/uses/iphone-15-pro",
+	  "/uses/apple-watch",
+	  "/uses/macbook-air",
+	  "/uses/mi-curved-gaming",
+	  "/uses/airpods-4",
+	  "/uses/sony-wh-xb910n",
+	  "/uses/logitech-mx-master-3",
+	  "/uses/pocket-knife",
+	  "/uses/gopro",
+	  "/uses/canon-250d",
+	  "/uses/playstation-5",
+	],
+	now: ['/now'],
+	photos: ['/photos'],
+	logos: ['/logos']
+	// Add other sections and their paths here
+};
+
 const Navbar = () => {
 	const { theme, toggleTheme } = useContext(ThemeContext);
 
@@ -16,8 +40,6 @@ const Navbar = () => {
 		window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 		// eslint-disable-next-line
 	}, [location]);
-
-	console.log(theme);
 
 	return (
 		<React.Fragment>
@@ -31,12 +53,12 @@ const Navbar = () => {
 
 			<header className='header'>
 				<div className='header-links'>
-					<NavbarItem text='Home' href='/' />
-					<NavbarItem text='About' href='/about' />
-					<NavbarItem text='Uses' href='/uses' />
-					<NavbarItem text='Now' href='/now' />
-					<NavbarItem text='Photos' href='/photos' />
-					<NavbarItem text='Logos' href='/logos' />
+					<NavbarItem text='Home' href='/' isActive={paths.home.includes(location.pathname)} />
+					<NavbarItem text='About' href='/about' isActive={paths.about.includes(location.pathname)} />
+					<NavbarItem text='Uses' href='/uses' isActive={paths.uses.includes(location.pathname)} />
+					<NavbarItem text='Now' href='/now' isActive={paths.now.includes(location.pathname)} />
+					<NavbarItem text='Photos' href='/photos' isActive={paths.photos.includes(location.pathname)} />
+					<NavbarItem text='Logos' href='/logos' isActive={paths.logos.includes(location.pathname)} />
 				</div>
 			</header>
 

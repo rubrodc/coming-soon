@@ -39,8 +39,8 @@ const Uses = () => {
 				<h1 className='display-1'>Workflow Essencials</h1>
 				<p className='title-3'>
 					Here's a quick rundown of all the tech and office gear I
-					use. This list <br /> includes the tools that keep my
-					workflow smooth, and the office <br /> gear that makes my
+					use. This list includes the tools that keep my
+					workflow smooth, and the office gear that makes my
 					workspace both functional and enjoyable.
 				</p>
 			</div>

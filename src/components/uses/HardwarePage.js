@@ -163,11 +163,11 @@ export default function HardwarePage({ product }) {
 
 			<div className={styles.wrapper}>
 				<div>
-					<h1>{productInfo.title}</h1>
-					<h2>{productInfo.subtitle}</h2>
+					<h1 className='display-3'>{productInfo.title}</h1>
+					<h2 className='headline-3'>{productInfo.subtitle}</h2>
 				</div>
 
-				<h3>{productInfo.description}</h3>
+				<h3 className='body-1'>{productInfo.description}</h3>
 
 				<img src={productInfo.img} alt='' />
 			</div>
