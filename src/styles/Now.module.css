@@ -37,7 +37,7 @@
     color: var(--now-card-title-text-color);
 }
 
-p {
+.updated {
     text-align: center;
     margin-top: 80px;
     color: var(--now-card-subtitle-text-color);

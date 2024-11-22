@@ -119,7 +119,7 @@ const Now = () => {
 				</div>
 			</div>
 
-            <p className="body-1">Last updated: July 2, 2024</p>
+            <p className={`body-1 ${styles.updated}`}>Last updated: July 2, 2024</p>
 		</div>
 	);
 };

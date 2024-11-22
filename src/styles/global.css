@@ -20,6 +20,7 @@
   --now-card-title-text-color: #111827;
   --now-card-subtitle-text-color: #71717A;
   --now-ic-fill: #A1A1AA;
+  --logo-fill: #18181B;
 }
 
 @supports (font-variation-settings: normal) {
@@ -45,6 +46,7 @@
   --now-card-title-text-color: #FFFF;
   --now-card-subtitle-text-color: #A1A1AA;
   --now-ic-fill: #A1A1AA;
+  --logo-fill: #FFF;
 }
 
 .display-1 {
