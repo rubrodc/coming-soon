@@ -21,6 +21,7 @@
   --now-card-subtitle-text-color: #71717A;
   --now-ic-fill: #A1A1AA;
   --logo-fill: #18181B;
+  --about-me-text: #52525B;
 }
 
 @supports (font-variation-settings: normal) {
@@ -47,6 +48,7 @@
   --now-card-subtitle-text-color: #A1A1AA;
   --now-ic-fill: #A1A1AA;
   --logo-fill: #FFF;
+  --about-me-text: #FFF;
 }
 
 .display-1 {

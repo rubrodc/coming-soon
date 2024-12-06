@@ -1,0 +1,350 @@
+.name {
+	text-align: center;
+	margin-bottom: 80px;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 39px;
+}
+
+.about-image-box {
+    display: inline-block; /* shrink wrap to image */
+    overflow: hidden; /* hide the excess */
+    width: 100%;
+    border-radius: 40px;
+}
+
+.about-image {
+	width: 100%;
+    display: block;
+    transition: .3s ease-in-out;
+    object-fit: cover;
+    border-radius: 40px;
+    height: 233px;
+    margin-bottom: 80px;
+}
+
+.about-image:hover {
+    transform: scale(1.1);
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.about-me p {
+    font-size: 22px;
+    line-height: 34px;
+    color: var(--about-me-text);
+    text-align: justify;
+}
+
+.experience {
+    margin: 160px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.experience > div {
+    width: 100%;
+}
+
+.experience h5 {
+    color: var(--now-secondary-text-color);
+}
+
+.experience h3, .experience h4 {
+    margin-bottom: 16px;
+}
+
+.experience-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.experience-cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex: auto;
+}
+
+.mission {
+    width: 70%;
+    margin: 160px auto;
+}
+
+.mission p:nth-of-type(1) {
+    font-size: 16px;
+    text-align: center;
+    color: #737373;
+}
+
+.mission p:nth-of-type(2) {
+    font-size: 28px;
+    text-align: center;
+    color: var(--about-me-text);
+}
+
+.skills {
+    margin: 160px 0;
+}
+
+.skills h1 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.skills-sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.skills-section {
+    border-radius: 24px;
+    border: 1px solid #E5E5E5;
+    padding: 24px;
+    width: 50%;
+}
+
+.skills-section ul {
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.skills-section ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.skills-section ul li:not(:last-of-type) {
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.skills-section ul li:last-of-type {
+    padding-bottom: 0;
+}
+
+.recognition {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.recognition h1, .recognition h3 {
+    text-align: center;
+}
+
+.recognition h3 {
+    color: var(--about-me-text);
+}
+
+.recognition-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recognition-wrapper div {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.recognition-wrapper div h4 {
+    color: var(--about-me-text);
+    font-weight: 400;
+}
+
+.recognition-wrapper div h4 span {
+    color: #BBBBBB;
+}
+
+.recognition-wrapper svg {
+    width: 48px;
+    height: 48px;
+}
+
+.contact {
+    width: 100%;
+    margin: 160px auto;
+}
+
+.contact h1 {
+    text-align: center;
+}
+
+.contact h3 {
+    color: var(--about-me-text);
+    margin: 40px 0;
+    text-align: center;
+}
+
+.contact p {
+    text-align: center;
+    color: #666666;
+}
+
+.contact-wrapper-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 40px 0;
+}
+
+.contact .btn {
+    padding: 13px 26px;
+    border-radius: 99px;
+    border: none;
+}
+
+.contact .btn-blue {
+    background-color: #0166FF;
+    color: #D4E5FF;
+}
+
+.btn-gray {
+    background-color: #F0F0F0;
+    color: #71717A;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.contact-wrapper-me {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-wrapper-me img {
+    width: 50px;
+	height: 50px;
+	border-radius: 99px;
+}
+
+.contact-wrapper-me h4 {
+    color: var(--nav-item-active-text-color);
+    font-weight: 500;
+}
+
+.contact-wrapper-me h5 {
+    color: #666666;
+    font-weight: 400;
+}
+
+.contact-wrapper-socials {
+    width: 60%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-wrapper-socials a {
+    background-color: #FAFAFA;
+    border-radius: 9999px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.name {
+        font-size: 42px;
+    }
+
+    .about-image {
+        height: 233px;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.name {
+        font-size: 70px;
+        line-height: 65px;
+    }
+
+    .about-image {
+        height: 333px;
+    }
+
+    .experience {
+        flex-direction: row;
+    }
+
+    .experience > div {
+        width: calc(100% / 4);
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.name {
+        font-size: 100px;
+        line-height: 95px;
+    }
+
+    .about-image {
+        height: 440px;
+    }
+
+    .mission p:nth-of-type(2) {
+        font-size: 38px;
+    }
+
+    .recognition {
+        width: 70%;
+    }
+
+    .contact {
+        width: 70%;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.name {
+        font-size: 175px;
+        line-height: 170px;
+    }
+
+    .about-image {
+        height: 648px;
+    }
+
+    .skills-sections {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .skills-section {
+        width: calc(100% / 3);
+    }
+
+    .recognition {
+        width: 50%;
+    }
+
+    .contact {
+        width: 50%;
+    }
+}

@@ -13,6 +13,7 @@ import HardwarePage from './components/uses/HardwarePage';
 import Now from './components/Now';
 import Photos from './components/Photos';
 import Logos from './components/Logos';
+import About from './components/About';
 
 const router = createBrowserRouter([
   {
@@ -86,6 +87,10 @@ const router = createBrowserRouter([
       {
         path: "/logos",
         element: <Logos />,
+      },
+      {
+        path: "/about",
+        element: <About />,
       },
     ],
   },
