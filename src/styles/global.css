@@ -22,6 +22,8 @@
   --now-ic-fill: #A1A1AA;
   --logo-fill: #18181B;
   --about-me-text: #52525B;
+  --color-text-primary: #09090B;
+  --theme-icon-color: #71717A;
 }
 
 @supports (font-variation-settings: normal) {
@@ -49,6 +51,8 @@
   --now-ic-fill: #A1A1AA;
   --logo-fill: #FFF;
   --about-me-text: #FFF;
+  --color-text-primary: #FFF;
+  --theme-icon-color: #FFF;
 }
 
 .display-1 {
@@ -208,8 +212,8 @@ body {
   gap: 160px;
   align-items: center;
   padding: 0 calc((100% - var(--main-width)) / 2);
-  background-color: white;
-  box-shadow: 0 350px 150px 700px white;
+  background-color: var(--bg-color);
+  box-shadow: 0 350px 150px 700px var(--bg-color);
   position: relative;
   z-index: 1;
 }

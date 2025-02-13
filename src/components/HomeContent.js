@@ -7,7 +7,7 @@ import ComputerIcon from './icons/ComputerIcon';
 const HomeContent = () => {
 	return (
 		<div className={styles.content}>
-			<h1 className={styles.title}>
+			<h1 className={`display-1 ${styles.title}`}>
 				Designing products <br /> that people love.
 			</h1>
 			<h2 className={styles.subtitle}>

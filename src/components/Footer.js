@@ -3,7 +3,7 @@ import styles from '../styles/Footer.module.css';
 import { Link } from "react-router-dom";
 
 export default function Footer() {
-    const [date, setDate] = useState(new Date());
+	const [date, setDate] = useState(new Date());
 
 	useEffect(() => {
 		const timer = setInterval(() => setDate(new Date()), 1000);
@@ -22,26 +22,59 @@ export default function Footer() {
 							Home
 						</Link>
 					</span>
-					<span>About</span>
-					<span>Projects</span>
-					<span>Now</span>
+					<span>
+						<Link to="/about">
+							About
+						</Link>
+					</span>
 					<span>
 						<Link to="/uses">
 							Uses
 						</Link>
 					</span>
+					<span>
+						<Link to="/now">
+							Now
+						</Link>
+					</span>
+					<span>
+						<Link to="/photos">
+							Photos
+						</Link>
+					</span>
+					<span>
+						<Link to="/logos">
+							Logos
+						</Link>
+					</span>
 				</div>
 				<div className={styles['footer-links']}>
 					<h1>Legal</h1>
-					<span>Colophon</span>
-					<span>Accessibility</span>
-					<span>Changelog</span>
+					<span>
+							Colophon
+					</span>
+					<span>
+						
+							Changelog
+					</span>
 				</div>
 				<div className={styles['footer-links']}>
 					<h1>Connect</h1>
-					<span>Dribbble</span>
-					<span>Read.cv</span>
-					<span>LinkedIn</span>
+					<span>
+						<Link to="/uses">
+							Dribbble
+						</Link>
+					</span>
+					<span>
+						<Link to="/uses">
+							Read.cv
+						</Link>
+					</span>
+					<span>
+						<Link to="/uses">
+							LinkedIn
+						</Link>
+					</span>
 				</div>
 			</div>
 

@@ -21,15 +21,72 @@
 }
 
 .theme-btn {
-	border-radius: 99px;
-	border: none;
-	width: 48px;
-	height: 48px;
-	background-color: var(--theme-btn-bg-color);
-	position: fixed;
-	right: 20px;
-	top: 20px;
-	z-index: 9999;
+    border-radius: 99px;
+    border: none;
+    width: 48px;
+    height: 48px;
+    background-color: var(--theme-btn-bg-color);
+    position: fixed;
+    right: 76px; /* Updated to make space for hamburger */
+    top: 20px;
+    z-index: 9999;
+}
+
+/* Add hamburger button styles */
+.hamburger-btn {
+    border-radius: 99px;
+    border: none;
+    width: 48px;
+    height: 48px;
+    background-color: var(--theme-btn-bg-color);
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 9999;
+    display: none;
+}
+
+.hamburger-btn svg path {
+    fill: var(--theme-icon-color);
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-color);
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    display: none;
+}
+
+.mobile-menu.open {
+    transform: translateX(0);
+}
+
+.mobile-menu-content {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+    .header-links {
+        display: none;
+    }
+
+    .hamburger-btn {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 450px) {
